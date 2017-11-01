@@ -43,6 +43,7 @@ dependencies {
     compile "mysql:mysql-connector-java:5.1.40"
     compile "com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.7.0"
     compile "commons-lang:commons-lang:2.4"
+
     compile "org.apache.tika:tika-core:1.14"
     compile "com.amazonaws:aws-java-sdk:1.11.74"
 
@@ -55,4 +56,6 @@ dependencies {
     testCompile "junit:junit:4.12"
 
     compile project(":components:movies")
+    compile project(":components:blobstore")
+    compile project(":components:albums")
 }
